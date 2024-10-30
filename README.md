@@ -1,6 +1,6 @@
 ## Basic HTML Website
 
-Roadmap project link: https://roadmap.sh/projects/single-page-cv/solutions?u=64b1bc4d5f038d81eeb4b894
+Roadmap project link: https://roadmap.sh/projects/basic-html-website/solutions?u=64b1bc4d5f038d81eeb4b894
 
 Roadmap project:https://roadmap.sh/projects/basic-html-website
 
