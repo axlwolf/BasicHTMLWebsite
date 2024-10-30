@@ -4,9 +4,9 @@ Roadmap project link: https://roadmap.sh/projects/single-page-cv/solutions?u=64b
 
 Roadmap project:https://roadmap.sh/projects/basic-html-website
 
-### Github link: https://github.com/axlwolf/
+### Github link: https://github.com/axlwolf/BasicHTMLWebsite
 
-### Github pages link: https://axlwolf.github.io/
+### Github pages link: https://axlwolf.github.io/BasicHTMLWebsite/
 
 Create simple HTML only website with multiple pages.
 
