@@ -1,0 +1,60 @@
+.homepage {
+  a {
+    color: lightblue;
+    &:hover {
+    }
+  }
+  .welcome {
+    min-height: 20vh;
+  }
+  .hero {
+    text-align: center;
+    h1 {
+      font-size: 2em;
+    }
+  }
+  .content {
+    // padding: 0.8em;
+    border: 1px solid #ccc;
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 20em;
+    .section {
+      border-right: inherit;
+      width: 33.33%;
+      padding: 0.5em;
+      height: inherit;
+      //overflow-y: scroll;
+      h3 {
+        margin: 0.5em 0;
+      }
+
+      dl {
+        dt {
+          font-weight: 600;
+        }
+        dd {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+
+  .reviews {
+    .reviews-cards {
+      display: flex;
+    }
+    .card {
+      padding: 0.8em;
+      width: 33%;
+    }
+  }
+}
+
+footer {
+  position: static;
+  bottom: 0;
+  width: 100vw;
+}
