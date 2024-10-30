@@ -21,7 +21,7 @@ var reload = browsersync.reload;
 // == Browser-sync task
 gulp.task("browser-sync", function (done) {
   browsersync.init({
-    server: "./docs",
+    server: "./public",
     // startPath: "./", // After it browser running [File path set]
     //    browser: 'chrome',
     host: "0.0.0.0",
@@ -41,7 +41,7 @@ gulp.task("html", () => {
     .src("./src/pages/**/*.html")
     .pipe(template("./src/template.html"))
     .pipe(htmlbeautify({ indentSize: 2, indentWithTabs: false }))
-    .pipe(gulp.dest("docs/"))
+    .pipe(gulp.dest("public/"))
     .pipe(browsersync.stream())
     .pipe(livereload());
 });
@@ -54,7 +54,7 @@ gulp.task("css", () => {
     .pipe(sass({ outputStyle: "expanded" }))
     .pipe(postcss([tailwind("./tailwind.config.js"), autoprefixer, cssnano]))
     .pipe(rename({ suffix: ".min" }))
-    .pipe(gulp.dest("docs/css"))
+    .pipe(gulp.dest("public/css"))
     .pipe(browsersync.stream())
     .pipe(livereload());
 });
@@ -65,7 +65,7 @@ gulp.task("css", () => {
 //     .src(
 //       "./src/assets/scss/vendor/fontawesome/webfonts/*.{ttf,woff,woff2,eot,svg}"
 //     )
-//     .pipe(gulp.dest("docs/css/webfonts"));
+//     .pipe(gulp.dest("public/css/webfonts"));
 // });
 
 // Transpile, concatenate and minify scripts
@@ -77,7 +77,7 @@ gulp.task("js", () => {
 
       // folder only, filename is specified in webpack config
       .pipe(concat("app.js"))
-      .pipe(gulp.dest("docs/js"))
+      .pipe(gulp.dest("public/js"))
       .pipe(browsersync.stream())
       .pipe(livereload())
   );
@@ -96,6 +96,5 @@ gulp.task(
     //   gulp.series("webfonts")
     // );
     livereload.listen();
-    //process.exit();
   })
 );
